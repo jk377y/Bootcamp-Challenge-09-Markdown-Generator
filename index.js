@@ -10,6 +10,7 @@ inquirer
             type: 'input',
             name: 'title',
             message: 'What is the title of this project?',
+            default: 'README.md File Generator',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
@@ -21,17 +22,19 @@ inquirer
             type: 'input',
             name: 'firstLastName',
             message: 'Type your FIRST AND LAST name.',
+            default: 'James Kelly',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
                 } else {            // if there is no input (falsey), get message
-                    return 'Your first and last name is required for this project'
+                    return 'Your first and last name are required for this project'
                 }},
         },
         {
             type: 'input',
             name: 'year',
             message: 'Type the current year',
+            default: '2022',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
@@ -76,6 +79,7 @@ inquirer
             type: 'input',
             name: 'demoImageDirectory',
             message: 'Type the directory of an image you would like to use to show a sample of your project:',
+            default: './images/demo.JPG',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
@@ -87,6 +91,7 @@ inquirer
             type: 'input',
             name: 'demoImageAltText',
             message: 'Type an altText phrase that will be displayed if your image is not able to be displayed:',
+            default: 'demo screenshot',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
@@ -95,7 +100,7 @@ inquirer
                 }},
         },
         {
-            type: 'rawlist',
+            type: 'list',
             name: 'license',
             message: 'What license would you like to include in your project?',
             choices: ['MIT', 'Apache 2.0', 'GNU GPL v3', 'BSD 3-Clause', 'Unlicense', 'No License'],
@@ -109,7 +114,8 @@ inquirer
         {
             type: 'input',
             name: 'contributing',
-            message: 'How may people contribute to your project?',
+            message: 'Enter your Cash App user name so others may contribute to your project.',
+            default: '$JK377Y',
             validate: (value) => {   // this will force the user to input a value
                 if(value) {         // if there is an input (truthy), no problems
                     return true
