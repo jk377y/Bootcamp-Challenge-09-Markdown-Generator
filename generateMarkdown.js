@@ -1,10 +1,7 @@
-// const inquirer = require('inquirer');  // npm library module
-// const fs = require('fs');  // file system, part of node?
-// const index = require('./index');
 
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
+function renderLicenseBadge(license) {			// this function provides the icons for the possible licenses that may be chosen
 	let licenseBadge = '';
 	if (license === 'MIT') {
 		licenseBadge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
@@ -17,14 +14,14 @@ function renderLicenseBadge(license) {
 	} else if (license === 'Unlicense') {
 		licenseBadge = '![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)'
 	} else {
-		licenseBadge = ''
+		licenseBadge = ''			//  this empty string is returned if no license is selected
 	}
 	return licenseBadge;
 }
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLink(license) {		//  this function provides the url link to view the chosen license's details
 	let licenseLink = '';
 	if (license === 'MIT') {
 		licenseLink = '(https://opensource.org/licenses/MIT)'
@@ -37,24 +34,25 @@ function renderLicenseLink(license) {
 	} else if (license === 'Unlicense') {
 		licenseLink = '(http://unlicense.org/)'
 	} else {
-		licenseLink = 'No License'
+		licenseLink = ''			//  if no license is chosen, then an empty string is returned
 	}
 	return licenseLink;
 }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
+function renderLicenseSection(license) {				//  this function creates the declaration of which license is used in the ##License section
 	let licenseSection = '';
 	if (license === 'None') {
-		licenseSection = ''
+		licenseSection = ''					//  if no license is chosen, then the string is empty
 	} else {
-		licenseSection = `License: $(license)` 
+		licenseSection = `License: ${license}`   //  if a license is chosen, then this else statement formats how it will be displayed
 	}
 	return licenseSection;
 }
 
 // TODO: Create a function to generate markdown for README
+//  creating an array for variables to be passed into our markdown file
 const readmeTemplate = ({ year, firstLastName, title, description, installation, usage, demoImageDirectory, demoImageAltText, license, contributing, tests, questionsGithub, questionsEmail }) =>
 `
 # ${title}
@@ -79,13 +77,13 @@ ${usage}
 <br>![${demoImageAltText}](${demoImageDirectory})
 
 ## License
-License: ${license}
-<br>${renderLicenseBadge(license)}
+${renderLicenseSection(license)}
+<br><br>${renderLicenseBadge(license)}
 <br>Information on this license can be found at: ${renderLicenseLink(license)}
 <br>Copyright (c) ${year} ${firstLastName}
 
 ## Contributing
-Cash App me @ ${contributing}
+Help support me by donating with Cash App ${contributing}
 
 ## Tests
 ${tests}
@@ -97,4 +95,4 @@ For Questions, I can be reached at the following:
 <br>Email:  ${questionsEmail}
 
 `;
-module.exports = readmeTemplate;
+module.exports = readmeTemplate;    		// this allows the elements on this page to be accessed externally

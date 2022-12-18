@@ -22,15 +22,15 @@ While using VSCode, use the integrated terminal feature while in the root direct
 
 ## License
 License: MIT
-<br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+<br><br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 <br>Information on this license can be found at: (https://opensource.org/licenses/MIT)
 <br>Copyright (c) 2022 James Kelly
 
 ## Contributing
-Cash App me @ $JK377Y
+Help support me by donating with Cash App $JK377Y
 
 ## Tests
-Testing on humans is not approved at this time.
+Open the integrated terminal in VS Code and navigate to the root directory where the index.js file is located.  You can start the application by typing [node index.js]
 
 ## Questions
 For Questions, I can be reached at the following:
