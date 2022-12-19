@@ -18,6 +18,8 @@ Make sure to run [npm install inquirer]. This will allow acces to the "Inquirer"
 
 ## Usage
 While using VSCode, use the integrated terminal feature while in the root directory where the index.js file is located, run the command [node index.js]. Answer the questions, or press [Enter] to select the default answer or leave blank.
+<br><br>Walkthrough video available at:  (https://drive.google.com/file/d/1KlcnK5b4SbfIgqCkOAv33-SrWcwM-J3y/view)
+
 <br>![demo screenshot](./images/demo.JPG)
 
 ## License

@@ -167,6 +167,3 @@ inquirer
     );
     
 });
-
-// TODO: Create a function to initialize app
-// not sure how to add this since the app works already using node index.js in the command line
