@@ -1,6 +1,6 @@
 
 # README.md File Generator
-<br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 This project provides a blank README.md file template and populates it from questions that are answered by user inputs
@@ -22,7 +22,7 @@ While using VSCode, use the integrated terminal feature while in the root direct
 
 ## License
 License: MIT
-<br><br>![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+<br><br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <br>Information on this license can be found at: (https://opensource.org/licenses/MIT)
 <br>Copyright (c) 2022 James Kelly
 
