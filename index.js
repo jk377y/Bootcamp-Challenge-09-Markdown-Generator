@@ -131,6 +131,12 @@ inquirer
             name: 'tests',
             message: 'What methods can be used to test your project?',
             default: 'Open the integrated terminal in VS Code and navigate to the root directory where the index.js file is located.  You can start the application by typing [node index.js]',
+            validate: (value) => { 
+                if(value) {         
+                    return true
+                } else {          
+                    return 'This section is require. If no tests are applicable, type "N/A"'
+                }},
         },
         {
             type: 'input',
