@@ -44,7 +44,7 @@ function renderLicenseSection(license) {				//  this function creates the declar
 	if (license === 'None') {
 		licenseSection = ''					//  if no license is chosen, then the string is empty
 	} else {
-		licenseSection = `License: ${license}`   //  if a license is chosen, then this else statement formats how it will be displayed
+		licenseSection = `License: ${license}`   //  if a license is chosen, then this else statement formats which license will be displayed
 	}
 	return licenseSection;
 }
