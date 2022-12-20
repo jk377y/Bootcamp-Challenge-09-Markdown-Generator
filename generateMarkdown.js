@@ -62,10 +62,10 @@ ${description}
 ## Table of Contents
 - [Installation](#installation)
 - [Usage](#usage)
-- [License](#license)
-- [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
+- [License](#license)
+- [Contributing](#contributing)
 
 ## Installation
 ${installation}
@@ -73,16 +73,6 @@ ${installation}
 ## Usage
 ${usage}
 <br>![${demoImageAltText}](${demoImageDirectory})
-
-## License
-${renderLicenseSection(license)}
-<br><br>${renderLicenseBadge(license)}
-<br>Information on this license can be found at: ${renderLicenseLink(license)}
-<br>Copyright (c) ${year} ${firstLastName}
-
-## Contributing
-No one else contributed to this project,
-<br>BUT... You can help support me by donating with Cash App @ ${contributing}
 
 ## Tests
 ${tests}
@@ -92,6 +82,16 @@ For Questions, I can be reached at the following:
 <br>GitHub:  https://github.com/${questionsGithub}
 <br>OR
 <br>Email:  ${questionsEmail}
+
+## Contributing
+No one else contributed to this project,
+<br>BUT... You can help support me by donating with Cash App @ ${contributing}
+
+## License
+${renderLicenseSection(license)}
+<br><br>${renderLicenseBadge(license)}
+<br>Copyright (c) ${year} ${firstLastName}
+<br>Information on this license can be found at: ${renderLicenseLink(license)}
 
 `;
 module.exports = readmeTemplate;    		// this allows the elements on this page to be accessed externally
