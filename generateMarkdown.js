@@ -81,7 +81,8 @@ ${renderLicenseSection(license)}
 <br>Copyright (c) ${year} ${firstLastName}
 
 ## Contributing
-Help support me by donating with Cash App ${contributing}
+No one else contributed to this project,
+<br>BUT... You can help support me by donating with Cash App @ ${contributing}
 
 ## Tests
 ${tests}

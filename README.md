@@ -1,6 +1,6 @@
 
 # README.md File Generator
-<br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+<br>
 
 ## Description
 This project provides a blank README.md file template and populates it from questions that are answered by user inputs
@@ -21,13 +21,14 @@ While using VSCode, use the integrated terminal feature while in the root direct
 <br>![demo screenshot](./images/demo.JPG)
 
 ## License
-License: MIT
-<br><br>[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-<br>Information on this license can be found at: (https://opensource.org/licenses/MIT)
+License: Apache 2.0
+<br><br>
+<br>Information on this license can be found at: (https://opensource.org/licenses/Apache-2.0)
 <br>Copyright (c) 2022 James Kelly
 
 ## Contributing
-Help support me by donating with Cash App $JK377Y
+No one else contributed to this project,
+<br>BUT... You can help support me by donating with Cash App @ $JK377Y
 
 ## Tests
 Open the integrated terminal in VS Code and navigate to the root directory where the index.js file is located.  You can start the application by typing [node index.js]
