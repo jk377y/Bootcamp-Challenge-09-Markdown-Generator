@@ -80,6 +80,18 @@ inquirer
         },
         {
             type: 'input',
+            name: 'walkthrough',
+            message: 'Provide a video link to walkthrough a user through the usage of your project:',
+            default: 'https://drive.google.com/file/d/1KlcnK5b4SbfIgqCkOAv33-SrWcwM-J3y/view',
+            validate: (value) => {  
+                if(value) {        
+                    return true
+                } else {            
+                    return 'Please provide a link for a walkthrough video.'
+                }},
+        },
+        {
+            type: 'input',
             name: 'demoImageDirectory',
             message: 'Type the directory of an image you would like to use to show a sample of your project:',
             default: './images/demo.JPG',

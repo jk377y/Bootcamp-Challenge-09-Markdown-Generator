@@ -51,7 +51,7 @@ function renderLicenseSection(license) {				//  this function creates the declar
 
 // TODO: Create a function to generate markdown for README
 //  creating an array for variables to be passed into our markdown file
-const readmeTemplate = ({ year, firstLastName, title, description, installation, usage, demoImageDirectory, demoImageAltText, license, contributing, tests, questionsGithub, questionsEmail }) =>
+const readmeTemplate = ({ year, firstLastName, title, description, installation, usage, walkthrough, demoImageDirectory, demoImageAltText, license, contributing, tests, questionsGithub, questionsEmail }) =>
 `
 # ${title}
 <br>${renderLicenseBadge(license)}
@@ -71,6 +71,9 @@ ${description}
 ${installation}
 
 ## Usage
+<br>Video Walkthrough Link
+<br>${walkthrough}<br>
+
 ${usage}
 <br>![${demoImageAltText}](${demoImageDirectory})
 

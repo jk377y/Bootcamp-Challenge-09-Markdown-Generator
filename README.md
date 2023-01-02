@@ -17,6 +17,9 @@ This project provides a blank README.md file template and populates it from ques
 Make sure to run [npm install inquirer]. This will allow acces to the "Inquirer" package module which is necessary for this application to run. You must also have node.js installed on your system.
 
 ## Usage
+<br>Video Walkthrough Link
+<br>https://drive.google.com/file/d/1KlcnK5b4SbfIgqCkOAv33-SrWcwM-J3y/view<br>
+
 While using VSCode, use the integrated terminal feature while in the root directory where the index.js file is located, run the command [node index.js]. Answer the questions, or press [Enter] to select the default answer or leave blank.
 <br>![demo screenshot](./images/demo.JPG)
 
